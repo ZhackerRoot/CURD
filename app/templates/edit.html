@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/edit/{{employee.id}}">
+    {%csrf_token%}
+    <div>
+        <br>
+        <div>
+            <label for=""></label>
+            <div>
+                <h3>Edit Details</h3>
+            </div>
+        </div>
+        <div>
+            <label for="">Emp firstname:</label>
+            <div>
+                <input type="text" name="firstname" value="{{employee.firstname}}">
+            </div>
+        </div>
+        <div>
+            <label for="">Emp lastname:</label>
+            <div>
+                <input type="text" name="lastname" value="{{employee.lastname}}">
+            </div>
+        </div>
+        <div>
+            <label for="">Emp email:</label>
+            <div>
+                <input type="text" name="email" value="{{employee.email}}">
+            </div>
+        </div>
+        <div>
+            <label for="">Emp file:</label>
+            <div>
+                <input type="text" name="file" value="{{employee.file}}">
+            </div>
+        </div>
+        <div>
+            <label for=""></label>
+            <div>
+                <button type="submit">Edit</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

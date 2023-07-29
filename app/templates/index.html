@@ -1,0 +1,47 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'w.css' %}">
+<body>  
+    <form method="POST" class="post-form" action="/index" enctype="multipart/form-data">  
+            {% csrf_token %}  
+            <div>
+                     <div>
+                        <label for=""></label>
+                        <div>
+                             <h3>Enter Details</h3>
+                        </div>
+                     </div>
+                     <div>
+                        <label for="">Employee Firstname</label>
+                        <div>
+                             {{form.firstname}}
+                        </div>
+                     </div>
+                     <div>
+                        <label for="">Employee Lastname</label>
+                        <div>
+                             {{form.lastname}}
+                        </div>
+                     </div>
+                     <div>
+                        <label for="">Employee Email</label>
+                        <div>
+                             {{form.email}}
+                        </div>
+                     </div>
+                     <div>
+                        <label for="">Employee File</label>
+                        <div>
+                             {{form.file}}
+                        </div>
+                     </div>
+
+                     <div>
+                          <label for=""></label>
+                        <div>
+                          <button type="submit">Submit</button>
+                        </div>
+                     </div>
+            </div>
+            
+    </form>  
+    </body>  

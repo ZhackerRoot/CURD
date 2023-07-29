@@ -1,0 +1,4 @@
+**/migrations
+**/__pycache__
+**/db_sqlite3
+**/Venv
